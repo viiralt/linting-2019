@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"src/**/*.{js,jsx,css,less,json}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,less,json}\"",
@@ -15,7 +16,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": ["eslint src --ext .js", "prettier --write", "git add"]
+    "src/**/*.{js,jsx}": [
+      "eslint src --ext .js",
+      "prettier --write",
+      "git add"
+    ]
   },
   "author": "Henri Viiralt",
   "license": "ISC",
@@ -30,7 +35,11 @@
     "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.3.0",
     "lint-staged": "^8.1.0",
+    "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
 }
