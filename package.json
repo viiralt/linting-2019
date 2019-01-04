@@ -1,5 +1,5 @@
 {
-  "name": "react-setup-2019",
+  "name": "linting-2019",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,11 +14,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "eslint src --ext .js",
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx}": ["eslint src --ext .js", "prettier --write", "git add"]
   },
   "author": "Henri Viiralt",
   "license": "ISC",
